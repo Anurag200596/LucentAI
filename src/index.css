@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  font-family: "Outfit";
+ 
+  box-sizing: border-box;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadein 1s linear ;
+  background-color: black;
+}
+.sidebar img{
+  height: 25px;
+  filter: invert(1);
+}
+.recent-entry{
+  animation: fadein 1s;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+.main .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.greet span{
+  background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.result::-webkit-scrollbar{
+  display: none;
+}
+.loader hr{
+  background: linear-gradient(to right,#93d7ff,#ffffff,#9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+  animation: loader 3s infinite linear;
+}
+@keyframes loader {
+  0%{
+    background-position: -800px 0px;
+  }
+  100%{
+    background-position: 800px 0px;
+  }
+}
+.result-data p {
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 10;
+  }
+  
+}
+@media (max-width:600px) {
+  .sidebar{
+    display: none;
+  }
+ 
+  
+}
