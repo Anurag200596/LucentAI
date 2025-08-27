@@ -12,6 +12,7 @@
   "dependencies": {
     "@google/genai": "^1.4.0",
     "@tailwindcss/vite": "^4.1.8",
+    "dotenv": "^17.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-speech-recognition": "^4.0.1",
