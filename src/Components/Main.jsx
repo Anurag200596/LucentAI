@@ -120,6 +120,7 @@ const Main = () => {
                 <div className="main-bottom absolute bottom-2 w-full max-w-[900px] px-2 sm:px-3 md:px-6">
                     <div className="search_box flex flex-wrap items-center justify-between bg-transparent border border-zinc-100 text-white gap-2 sm:gap-3 md:gap-5 rounded-full py-2 sm:py-[10px] md:py-[15px] px-3 md:px-[20px]">
                         <input
+                        onKeyDown={(e)=> e.key === "Enter" && clickHandler()}
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             className="flex-1 min-w-[150px] border-0 outline-0 text-sm sm:text-base md:text-lg text-white font-medium bg-transparent"
